@@ -19,12 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
--------------------------------------------------------------------------------
-This license applies only to the files in this repository whose copyright is
-held by katze (Werk) (mainly the type02/ directory). It does NOT apply to:
-
-  * yaneSDK/ : yaneuraoGameSDK 3rd by yaneurao (M.Isozaki), with modifications.
-    Copyright belongs to its original author. See README.md.
-  * Names, characters and other elements derived from TYPE-MOON works.
-    These rights belong to TYPE-MOON and the respective rights holders.
