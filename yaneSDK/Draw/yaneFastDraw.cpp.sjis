@@ -1,0 +1,20 @@
+//
+//	DirectDrawSurface and MemorySurface Wrapper
+//
+
+#include "stdafx.h"
+
+#ifdef USE_FastDraw
+
+#ifndef USE_D3D11
+#include "yaneDirectDraw.h"
+#endif
+#include "yaneFastDraw.h"
+#include "yaneFastPlane.h"
+#include "yaneGTL.h"
+#include "../Window/yaneWindow.h"
+#include "../AppFrame/yaneAppManager.h"	//	GetHWnd
+#include "../AppFrame/yaneAppBase.h"
+
+//////////////////////////////////////////////////////////////////////////////
+//	CFastDraw : 

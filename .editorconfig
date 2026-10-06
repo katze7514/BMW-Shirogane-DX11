@@ -1,0 +1,5 @@
+[*.cpp]
+charset = shift_jis
+
+[*.h]
+charset = shift_jis

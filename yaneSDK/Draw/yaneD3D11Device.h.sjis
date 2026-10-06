@@ -1,0 +1,20 @@
+//
+//  yaneD3D11Device.h
+//      DirectX 11 device / swap chain / fullscreen quad renderer
+//      Drop-in backend for DirectDraw: presents software-rendered frames via DX11
+//
+#pragma once
+
+#ifdef USE_D3D11
+
+#include <d3d11.h>
+#include <dxgi.h>
+
+namespace yaneuraoGameSDK3rd {
+namespace Draw {
+
+// Transfers a software-rendered frame to the screen using DX11
+class CD3D11Device {
+public:
+    CD3D11Device();
+    

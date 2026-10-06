@@ -1,0 +1,52 @@
+//
+//  yaneD3D11Device.cpp
+//
+
+#include "stdafx.h"
+
+#ifdef USE_D3D11
+
+#include "yaneD3D11Device.h"
+#include <d3dcompiler.h>
+
+#pragma comment(lib, "d3d11.lib")
+#pragma comment(lib, "dxgi.lib")
+#pragma comment(lib, "d3dcompiler.lib")
+
+namespace yaneuraoGameSDK3rd {
+namespace Draw {
+
+// ---------------------------------------------------------------------------
+//  Fullscreen quad shaders (HLSL source strings)
+// ---------------------------------------------------------------------------
+
+static const char* s_szVS = R"(
+void VSMain(uint id        : SV_VertexID,
+            out float4 pos : SV_Position,
+            out float2 uv  : TEXCOORD)
+{
+    uv.x = (id & 1) ? 1.0f : 0.0f;
+    uv.y = (id & 2) ? 1.0f : 0.0f;
+    pos  = float4(uv.x * 2.0f - 1.0f, 1.0f - uv.y * 2.0f, 0.0f, 1.0f);
+}
+)";
+
+static const char* s_szPS = R"(
+Texture2D    gTex  : register(t0);
+SamplerState gSamp : register(s0);
+float4 PSMain(float2 uv : TEXCOORD) : SV_Target
+{
+    return gTex.Sample(gSamp, uv);
+}
+)";
+
+// ---------------------------------------------------------------------------
+
+CD3D11Device::CD3D11Device()
+    : m_hWnd(NULL), m_nWidth(0), m_nHeight(0), m_bFullScreen(false)
+    , m_pDevice(nullptr), m_pContext(nullptr), m_pSwapChain(nullptr)
+    , m_pRTV(nullptr), m_pFrameTex(nullptr), m_pFrameSRV(nullptr)
+    , m_pVS(nullptr), m_pPS(nullptr), m_pSampler(nullptr)
+{}
+
+CD3D11Device::

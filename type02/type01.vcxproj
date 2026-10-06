@@ -1,0 +1,1634 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|x64">
+      <Configuration>Develop</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>type02</ProjectName>
+    <ProjectGuid>{C72E531E-5BD4-4696-9CB4-BD7F21118848}</ProjectGuid>
+    <RootNamespace>type02</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Develop|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <OutDir>..\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/Zm250 </AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\boost;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_SECURE_SCL=0;BMW_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>yaneSDK_d.lib;d3d11.lib;dxgi.lib;d3dcompiler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\boost\lib;..\yaneSDK\ProjectFiles\MSVC\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/Zm250 </AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\boost;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_SECURE_SCL=0;BMW_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <ExceptionHandling>false</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>yaneSDK_d.lib;d3d11.lib;dxgi.lib;d3dcompiler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\boost\lib;..\yaneSDK\ProjectFiles\MSVC\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/Zm250 </AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>..\boost;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_SECURE_SCL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>yaneSDK.lib;d3d11.lib;dxgi.lib;d3dcompiler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(OutDir)bmw.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\boost\lib;..\yaneSDK\ProjectFiles\MSVC\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <HeapReserveSize>0</HeapReserveSize>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/Zm250 </AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>..\boost;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_SECURE_SCL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <ExceptionHandling>false</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>yaneSDK.lib;d3d11.lib;dxgi.lib;d3dcompiler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(OutDir)bmw.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\boost\lib;..\yaneSDK\ProjectFiles\MSVC\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <HeapReserveSize>0</HeapReserveSize>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\boost;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_SECURE_SCL=0;BMW_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/Zm250 </AdditionalOptions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>yaneSDK_dev.lib;d3d11.lib;dxgi.lib;d3dcompiler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\boost\lib;..\yaneSDK\ProjectFiles\MSVC\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\boost;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_SECURE_SCL=0;BMW_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/Zm250 </AdditionalOptions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <ExceptionHandling>false</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>yaneSDK_dev.lib;d3d11.lib;dxgi.lib;d3dcompiler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\boost\lib;..\yaneSDK\ProjectFiles\MSVC\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Ability\Ability.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Against.h" />
+    <ClInclude Include="Ability\Ability\CAbility_AlterEgo.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Arrowbless.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Attacker.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Avalon.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Backupattack.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Backupdefence.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Balletsave.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Battlefollow.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Battlespirit.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Breakline.h" />
+    <ClInclude Include="Ability\Ability\CAbility_ChaliceConect.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Colabarriar.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Concent.h" />
+    <ClInclude Include="Ability\Ability\CAbility_CondIgnore.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Counter.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Death.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Death_Ex.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Death_True.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Deka.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Demon.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Division.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Division_True.h" />
+    <ClInclude Include="Ability\Ability\CAbility_En_recover_l.h" />
+    <ClInclude Include="Ability\Ability\CAbility_En_recover_m.h" />
+    <ClInclude Include="Ability\Ability\CAbility_En_recover_s.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Field_Ignore.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Fightup.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Float.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Fly.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Fundpower.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Futou.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Futsuno.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Futureeye.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Futureeye_Second.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Guard.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Hitaway.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Hiyokurenri.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Hp_recover_l.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Hp_recover_m.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Hp_recover_s.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Ikiyoyo.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Kehai.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Land_Ignore.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Linkageattack.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Loli.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Lucky.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Madred.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Magicbarrier_a.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Magicbarrier_b.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Magicbarrier_c.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Magician.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Magicrelease.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Magicsave.h" />
+    <ClInclude Include="Ability\Ability\CAbility_MekaBarriar.h" />
+    <ClInclude Include="Ability\Ability\CAbility_MekaBarriarWeak.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Moveup.h" />
+    <ClInclude Include="Ability\Ability\CAbility_MudaiShield.h" />
+    <ClInclude Include="Ability\Ability\CAbility_OpenGet.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Origin.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Revenge.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Rithm.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Roaias.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Scaepgoat.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Specter.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Sprecover.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Spup.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Superpower.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Twelvecross.h" />
+    <ClInclude Include="Ability\Ability\CAbility_TwiceAction.h" />
+    <ClInclude Include="Ability\Ability\CAbility_TwiceAttack.h" />
+    <ClInclude Include="Ability\Ability\CAbility_TwiceAttack_enemy.h" />
+    <ClInclude Include="Ability\Ability\CAbility_Vampire.h" />
+    <ClInclude Include="Ability\CFundTable.h" />
+    <ClInclude Include="Ability\CMagicianTable.h" />
+    <ClInclude Include="Ability\ConstAbility.h" />
+    <ClInclude Include="Ability\CSpecterTable.h" />
+    <ClInclude Include="Ability\CVampireTable.h" />
+    <ClInclude Include="Ability\Db\CAbilityDB.h" />
+    <ClInclude Include="Ability\IDAbility.h" />
+    <ClInclude Include="Ability\IDataAbility.h" />
+    <ClInclude Include="Adv\AdvApi.h" />
+    <ClInclude Include="Adv\AdvCmd.h" />
+    <ClInclude Include="Adv\adv_closure.h" />
+    <ClInclude Include="Adv\adv_symbol.h" />
+    <ClInclude Include="Adv\CADVBack.h" />
+    <ClInclude Include="Adv\CAdvCmdFactory.h" />
+    <ClInclude Include="Adv\CADVContext.h" />
+    <ClInclude Include="Adv\CAdvFactory.h" />
+    <ClInclude Include="Adv\CAdvMap.h" />
+    <ClInclude Include="ADV\CADVMsgLog.h" />
+    <ClInclude Include="Adv\CAdvParser.h" />
+    <ClInclude Include="Adv\CADVScene.h" />
+    <ClInclude Include="Adv\CAdvVM.h" />
+    <ClInclude Include="Adv\CMsgBoard.h" />
+    <ClInclude Include="Adv\Code\CBack_change.h" />
+    <ClInclude Include="Adv\Code\CChange_chara.h" />
+    <ClInclude Include="Adv\Code\CCode_fade.h" />
+    <ClInclude Include="Adv\Code\CCode_msg_state.h" />
+    <ClInclude Include="Adv\Code\CCode_next.h" />
+    <ClInclude Include="Adv\Code\CCode_train.h" />
+    <ClInclude Include="ADV\Code\CCode_train_all.h" />
+    <ClInclude Include="Adv\Code\CCode_valid.h" />
+    <ClInclude Include="ADV\Code\CItem_ctrl.h" />
+    <ClInclude Include="ADV\Code\CMsg_back.h" />
+    <ClInclude Include="Adv\Code\CMsg_change.h" />
+    <ClInclude Include="Adv\Code\CScenario_select.h" />
+    <ClInclude Include="Adv\Code\CWait_fade.h" />
+    <ClInclude Include="Adv\Code\CWait_input.h" />
+    <ClInclude Include="Adv\ConstADV.h" />
+    <ClInclude Include="Adv\Db\CBackDB.h" />
+    <ClInclude Include="Adv\Db\CBackParser.h" />
+    <ClInclude Include="Adv\Db\CDataBack.h" />
+    <ClInclude Include="Adv\IDADV.h" />
+    <ClInclude Include="Bmw\06_c\CEvent_trap.h" />
+    <ClInclude Include="Bmw\06_c\CFactorySLG_C_06.h" />
+    <ClInclude Include="Bmw\11_c\CCaosCreate.h" />
+    <ClInclude Include="Bmw\11_c\CFactorySLG_C_11.h" />
+    <ClInclude Include="Bmw\20_t\CArcher_snipe.h" />
+    <ClInclude Include="Bmw\20_t\CFactorySLG_T_20.h" />
+    <ClInclude Include="Bmw\BMWFactory.h" />
+    <ClInclude Include="Bmw\IDBMW.h" />
+    <ClInclude Include="CApp.h" />
+    <ClInclude Include="Chara\CDataCharaBase.h" />
+    <ClInclude Include="Chara\CDataCharaBattle.h" />
+    <ClInclude Include="Chara\CDataCharaGrowthAbility.h" />
+    <ClInclude Include="Chara\CDataCharaGrowthStatus.h" />
+    <ClInclude Include="Chara\CDataCharaInit.h" />
+    <ClInclude Include="Chara\CDataCharaInter.h" />
+    <ClInclude Include="Chara\CDataCharaTrain.h" />
+    <ClInclude Include="Chara\ConstChara.h" />
+    <ClInclude Include="Chara\CStatusAbility.h" />
+    <ClInclude Include="Chara\CStatusBattle.h" />
+    <ClInclude Include="Chara\CStatusFund.h" />
+    <ClInclude Include="Chara\CStatusGrowthAbility.h" />
+    <ClInclude Include="Chara\CStatusGrowthStatus.h" />
+    <ClInclude Include="Chara\CValidCond.h" />
+    <ClInclude Include="Chara\CValidSkill.h" />
+    <ClInclude Include="Chara\CValidSpirit.h" />
+    <ClInclude Include="Chara\Db\CCharaDB.h" />
+    <ClInclude Include="Chara\Db\CCharaParser.h" />
+    <ClInclude Include="Chara\Db\CDataCharaData.h" />
+    <ClInclude Include="Chara\Db\chara_closure.h" />
+    <ClInclude Include="Chara\Db\chara_symbol.h" />
+    <ClInclude Include="Chara\Db\CStatusParser.h" />
+    <ClInclude Include="Chara\Db\train_grammar.h" />
+    <ClInclude Include="Chara\fund_grammar.h" />
+    <ClInclude Include="Chara\IDChara.h" />
+    <ClInclude Include="Config\ConstConfig.h" />
+    <ClInclude Include="Config\Db\CConfigDB.h" />
+    <ClInclude Include="Config\Db\CConfigParser.h" />
+    <ClInclude Include="cpp17_compat.h" />
+    <ClInclude Include="Data\CDataContext.h" />
+    <ClInclude Include="Data\CDataScene.h" />
+    <ClInclude Include="Data\IDData.h" />
+    <ClInclude Include="Demo\Back\CBackKeyFrame.h" />
+    <ClInclude Include="Demo\Back\CBackSymbolDB.h" />
+    <ClInclude Include="Demo\Back\CDemoBack.h" />
+    <ClInclude Include="Demo\Back\CDemoBackLine.h" />
+    <ClInclude Include="Demo\Back\CDemoBackLoader.h" />
+    <ClInclude Include="Demo\Back\CDemoBackMovieClip.h" />
+    <ClInclude Include="Demo\Back\CDemoBackParser.h" />
+    <ClInclude Include="Demo\Back\IDemoBack.h" />
+    <ClInclude Include="Demo\Back\IDemoBackLine.h" />
+    <ClInclude Include="Demo\CDemoContext.h" />
+    <ClInclude Include="Demo\CDemoMovieClip.h" />
+    <ClInclude Include="Demo\CDemoScene.h" />
+    <ClInclude Include="Demo\CDemoSymbolDB.h" />
+    <ClInclude Include="Demo\CLayerChara.h" />
+    <ClInclude Include="Demo\Code\CCode_back_vel.h" />
+    <ClInclude Include="Demo\Code\CCode_back_visible.h" />
+    <ClInclude Include="Demo\Code\CCode_ct.h" />
+    <ClInclude Include="Demo\Code\CCode_curtain.h" />
+    <ClInclude Include="Demo\Code\CCode_damage.h" />
+    <ClInclude Include="Demo\Code\CCode_damage_state.h" />
+    <ClInclude Include="Demo\Code\CCode_gage.h" />
+    <ClInclude Include="Demo\Code\CCode_msg_demo.h" />
+    <ClInclude Include="Demo\Def\CDemoDef.h" />
+    <ClInclude Include="Demo\Def\CDemoDefParser.h" />
+    <ClInclude Include="Demo\Def\CDemoMsgCond.h" />
+    <ClInclude Include="Demo\Def\CDemoSymbolCond.h" />
+    <ClInclude Include="Demo\Gui\CDemoDamage.h" />
+    <ClInclude Include="Demo\Gui\CDemoEasyStatus.h" />
+    <ClInclude Include="Demo\Gui\CDemoMsgBoard.h" />
+    <ClInclude Include="Demo\IDDemo.h" />
+    <ClInclude Include="Demo\Msg\CDemoMsg.h" />
+    <ClInclude Include="Demo\Msg\CDemoMsgDB.h" />
+    <ClInclude Include="Demo\Msg\CDemoMsgList.h" />
+    <ClInclude Include="Demo\Msg\CDemoMsgParser.h" />
+    <ClInclude Include="Dict\CDictCharaContext.h" />
+    <ClInclude Include="Dict\CDictCharaFace.h" />
+    <ClInclude Include="Dict\CDictCharaFactory.h" />
+    <ClInclude Include="Dict\CDictCharaParser.h" />
+    <ClInclude Include="Dict\CDictCharaScene.h" />
+    <ClInclude Include="Dict\CDictCharaSelect.h" />
+    <ClInclude Include="Dict\CDictCharaSymbol.h" />
+    <ClInclude Include="Dict\CDictCharaView.h" />
+    <ClInclude Include="Dict\CDictSoundContext.h" />
+    <ClInclude Include="Dict\CDictSoundParser.h" />
+    <ClInclude Include="Dict\CDictSoundScene.h" />
+    <ClInclude Include="Dict\DictFunction.h" />
+    <ClInclude Include="Draw\CDrawInfo.h" />
+    <ClInclude Include="Draw\CFader.h" />
+    <ClInclude Include="Draw\CSpriteInfo.h" />
+    <ClInclude Include="Draw\CSpriteInfoBase.h" />
+    <ClInclude Include="Draw\Db\CPlaneLoader2.h" />
+    <ClInclude Include="Draw\Db\CPlaneParser.h" />
+    <ClInclude Include="Draw\Db\CSpriteDB.h" />
+    <ClInclude Include="Draw\Db\CSpriteParser.h" />
+    <ClInclude Include="Draw\Db\plane_closure.h" />
+    <ClInclude Include="Draw\Db\sprite_closure.h" />
+    <ClInclude Include="Draw\Draw.h" />
+    <ClInclude Include="Ed\CEdScene.h" />
+    <ClInclude Include="End\CEndScene.h" />
+    <ClInclude Include="Face\CFaceMap.h" />
+    <ClInclude Include="Face\CFaceMapParser.h" />
+    <ClInclude Include="Face\ConstFace.h" />
+    <ClInclude Include="Face\Db\CDataFace.h" />
+    <ClInclude Include="Face\Db\CFaceDB.h" />
+    <ClInclude Include="Face\Db\CFaceParser.h" />
+    <ClInclude Include="Face\Db\face_closure.h" />
+    <ClInclude Include="Face\IDFace.h" />
+    <ClInclude Include="Game\CGameScene.h" />
+    <ClInclude Include="Game\IDGame.h" />
+    <ClInclude Include="Gui\CButton.h" />
+    <ClInclude Include="Gui\CButtonGraphic.h" />
+    <ClInclude Include="Gui\CButtonHolder.h" />
+    <ClInclude Include="Gui\CButtonKeep.h" />
+    <ClInclude Include="Gui\CButtonKeepSymbol.h" />
+    <ClInclude Include="Gui\CButtonSymbol.h" />
+    <ClInclude Include="Gui\CGraphic.h" />
+    <ClInclude Include="Gui\CGraphicAccuracy.h" />
+    <ClInclude Include="GUI\CGraphicAffine.h" />
+    <ClInclude Include="GUI\CGraphicMorph.h" />
+    <ClInclude Include="Gui\CGraphicPopUp.h" />
+    <ClInclude Include="Gui\CGraphicRotate.h" />
+    <ClInclude Include="Gui\CGraphicRotate2.h" />
+    <ClInclude Include="Gui\CGraphicRotate3.h" />
+    <ClInclude Include="Gui\CGraphicSize.h" />
+    <ClInclude Include="Gui\CNum.h" />
+    <ClInclude Include="Gui\CPanel.h" />
+    <ClInclude Include="Gui\CPanelCtrl.h" />
+    <ClInclude Include="GUI\CPopUpBase.h" />
+    <ClInclude Include="GUI\CPopUpCtrl.h" />
+    <ClInclude Include="Gui\CText.h" />
+    <ClInclude Include="Gui\CTextPopUp.h" />
+    <ClInclude Include="GUI\CTextSize.h" />
+    <ClInclude Include="Gui\Db\CDataGuiDefAction.h" />
+    <ClInclude Include="Gui\Db\CDataGuiDefCircle.h" />
+    <ClInclude Include="Gui\Db\CDataGuiDefGage.h" />
+    <ClInclude Include="Gui\Db\CDataGuiDefGui.h" />
+    <ClInclude Include="Gui\Db\CDataGuiDefPanel.h" />
+    <ClInclude Include="Gui\Db\CDataGuiDefRemain.h" />
+    <ClInclude Include="Gui\Db\CDataGuiDefWidget.h" />
+    <ClInclude Include="Gui\Db\CGuiDefDB.h" />
+    <ClInclude Include="Gui\Db\CGuiDefParser.h" />
+    <ClInclude Include="Gui\Db\guidef_symbol.h" />
+    <ClInclude Include="Gui\Db\IDataGuiDef.h" />
+    <ClInclude Include="Gui\Db\IDataGuiDefWidget.h" />
+    <ClInclude Include="Gui\Db\IDGuiDef.h" />
+    <ClInclude Include="Gui\Event\CEventButton.h" />
+    <ClInclude Include="Gui\Event\IEvent.h" />
+    <ClInclude Include="Gui\GUI.h" />
+    <ClInclude Include="Gui\IButton.h" />
+    <ClInclude Include="Gui\IDGui.h" />
+    <ClInclude Include="Gui\INum.h" />
+    <ClInclude Include="Gui\IPanel.h" />
+    <ClInclude Include="Gui\IPanelParser.h" />
+    <ClInclude Include="Handover\CHandoverScene.h" />
+    <ClInclude Include="Hero\CHeroScene.h" />
+    <ClInclude Include="Hero\IDHero.h" />
+    <ClInclude Include="InitLoad\CInitLoadScene.h" />
+    <ClInclude Include="Input\CTaskInput.h" />
+    <ClInclude Include="Input\IInput.h" />
+    <ClInclude Include="Inter\CChara.h" />
+    <ClInclude Include="Inter\CDataItemInter.h" />
+    <ClInclude Include="Inter\CInterChara.h" />
+    <ClInclude Include="Inter\CInterContext.h" />
+    <ClInclude Include="Inter\CInterFactory.h" />
+    <ClInclude Include="Inter\CInterScene.h" />
+    <ClInclude Include="Inter\CInterTaskListCtrl.h" />
+    <ClInclude Include="Inter\CItemEqup.h" />
+    <ClInclude Include="Inter\CItemExchange.h" />
+    <ClInclude Include="Inter\CSelect.h" />
+    <ClInclude Include="Inter\CTrainBattle.h" />
+    <ClInclude Include="Inter\CTrainFnd.h" />
+    <ClInclude Include="Inter\CTrainSkill.h" />
+    <ClInclude Include="Inter\CTrainWeapon.h" />
+    <ClInclude Include="Inter\CWeaponFactory.h" />
+    <ClInclude Include="Inter\IDInter.h" />
+    <ClInclude Include="Inter\InterSort.h" />
+    <ClInclude Include="Inter\item_fun.h" />
+    <ClInclude Include="Inter\ITrainBase.h" />
+    <ClInclude Include="Inter\train_fun.h" />
+    <ClInclude Include="Item\CItemDB.h" />
+    <ClInclude Include="Item\ConstItem.h" />
+    <ClInclude Include="Item\IDItem.h" />
+    <ClInclude Include="Item\Item.h" />
+    <ClInclude Include="Item\Item\CItem_Agonist.h" />
+    <ClInclude Include="Item\Item\CItem_Archer.h" />
+    <ClInclude Include="Item\Item\CItem_Avenger.h" />
+    <ClInclude Include="Item\Item\CItem_Berserker.h" />
+    <ClInclude Include="Item\Item\CItem_Boot.h" />
+    <ClInclude Include="Item\Item\CItem_Caster.h" />
+    <ClInclude Include="Item\Item\CItem_Curry.h" />
+    <ClInclude Include="Item\Item\CItem_Earring.h" />
+    <ClInclude Include="Item\Item\CItem_Gem.h" />
+    <ClInclude Include="Item\Item\CItem_Giru.h" />
+    <ClInclude Include="Item\Item\CItem_Houi.h" />
+    <ClInclude Include="Item\Item\CItem_Kyudo.h" />
+    <ClInclude Include="Item\Item\CItem_Lancer.h" />
+    <ClInclude Include="Item\Item\CItem_Mabo.h" />
+    <ClInclude Include="Item\Item\CItem_Magazine.h" />
+    <ClInclude Include="Item\Item\CItem_Maid.h" />
+    <ClInclude Include="Item\Item\CItem_Medi.h" />
+    <ClInclude Include="Item\Item\CItem_Megane.h" />
+    <ClInclude Include="Item\Item\CItem_Neko.h" />
+    <ClInclude Include="Item\Item\CItem_Otsu.h" />
+    <ClInclude Include="Item\Item\CItem_Ribbon.h" />
+    <ClInclude Include="Item\Item\CItem_Rider.h" />
+    <ClInclude Include="Item\Item\CItem_Rod.h" />
+    <ClInclude Include="Item\Item\CItem_Saber.h" />
+    <ClInclude Include="Item\Item\CItem_Shiro.h" />
+    <ClInclude Include="Item\Item\CItem_Tiger.h" />
+    <ClInclude Include="Item\Item\CItem_True_assassin.h" />
+    <ClInclude Include="Item\Item\CItem_Wotsu.h" />
+    <ClInclude Include="Logo\CLogoScene.h" />
+    <ClInclude Include="Misc\CFixedNum.h" />
+    <ClInclude Include="Misc\CIntBiStringMap.h" />
+    <ClInclude Include="Misc\CIntMap.h" />
+    <ClInclude Include="Misc\CLottery.h" />
+    <ClInclude Include="Misc\CRandLottery.h" />
+    <ClInclude Include="Misc\CStringMap.h" />
+    <ClInclude Include="Misc\delete.h" />
+    <ClInclude Include="Misc\misc_fun.h" />
+    <ClInclude Include="mode.h" />
+    <ClInclude Include="Movie\CKeyFrame.h" />
+    <ClInclude Include="Movie\CKeyFrameBorn.h" />
+    <ClInclude Include="Movie\CLayer.h" />
+    <ClInclude Include="Movie\CMotion.h" />
+    <ClInclude Include="Movie\CMotionCircle.h" />
+    <ClInclude Include="Movie\CMovieClip.h" />
+    <ClInclude Include="Movie\CMovieClipBorn.h" />
+    <ClInclude Include="Movie\CMovieScene.h" />
+    <ClInclude Include="Movie\Code\CCode_movie_end.h" />
+    <ClInclude Include="Movie\Code\CCode_movie_se_wait.h" />
+    <ClInclude Include="Movie\Code\CCode_movie_stop.h" />
+    <ClInclude Include="Movie\Code\CCode_stop.h" />
+    <ClInclude Include="Movie\Code\CSymbolCmdFactory.h" />
+    <ClInclude Include="Movie\CScriptExecSymbol.h" />
+    <ClInclude Include="Movie\CTween.h" />
+    <ClInclude Include="Movie\CTweenBorn.h" />
+    <ClInclude Include="Movie\Db\CDataSymbolGui.h" />
+    <ClInclude Include="Movie\Db\CDataSymbolMovieClip.h" />
+    <ClInclude Include="Movie\Db\CSymbolDB.h" />
+    <ClInclude Include="Movie\Db\CSymbolParser.h" />
+    <ClInclude Include="Movie\Db\IDataSymbol.h" />
+    <ClInclude Include="Movie\Db\symbol_closure.h" />
+    <ClInclude Include="Movie\Db\symbol_symbol.h" />
+    <ClInclude Include="Movie\IDMovieCode.h" />
+    <ClInclude Include="Movie\IKeyFrame.h" />
+    <ClInclude Include="Movie\IMotion.h" />
+    <ClInclude Include="Movie\Movie.h" />
+    <ClInclude Include="Movie\MovieCode.h" />
+    <ClInclude Include="Parser\debug_functor.h" />
+    <ClInclude Include="Parser\parse_closure.h" />
+    <ClInclude Include="Parser\parse_symbol.h" />
+    <ClInclude Include="Parser\skip_comment.h" />
+    <ClInclude Include="Parser\sprite_functor.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Rule\CRuleButton.h" />
+    <ClInclude Include="Rule\CRuleCancel.h" />
+    <ClInclude Include="Rule\CRuleList.h" />
+    <ClInclude Include="Rule\CRuleListDraw.h" />
+    <ClInclude Include="Rule\CRuleMenuButton.h" />
+    <ClInclude Include="Rule\CRuleOK.h" />
+    <ClInclude Include="Rule\IRuleTask.h" />
+    <ClInclude Include="Rule\Rule.h" />
+    <ClInclude Include="Save\CExecData.h" />
+    <ClInclude Include="Save\CExecDataHead.h" />
+    <ClInclude Include="Save\CGlobalData.h" />
+    <ClInclude Include="Scenario\CDataScenario.h" />
+    <ClInclude Include="Scenario\CScenarioDB.h" />
+    <ClInclude Include="Scenario\CScenarioParser.h" />
+    <ClInclude Include="Scenario\scenario_closure.h" />
+    <ClInclude Include="Scenario\scenario_symbol.h" />
+    <ClInclude Include="Scene\Code\CCode_ctrl_item.h" />
+    <ClInclude Include="Scene\Code\CCode_help.h" />
+    <ClInclude Include="Scene\ConstScene.h" />
+    <ClInclude Include="Scene\CRuleScene.h" />
+    <ClInclude Include="Scene\CScene.h" />
+    <ClInclude Include="Scene\CSceneFactory.h" />
+    <ClInclude Include="Scene\Draw\CFoward.h" />
+    <ClInclude Include="Scene\Event\IListenerCircleMenu.h" />
+    <ClInclude Include="Scene\Gui\CCircleMenu.h" />
+    <ClInclude Include="Scene\Gui\CCircleMenuButton.h" />
+    <ClInclude Include="Scene\Gui\CGage.h" />
+    <ClInclude Include="Scene\Gui\CGraphicFace.h" />
+    <ClInclude Include="Scene\Gui\CGraphicName.h" />
+    <ClInclude Include="Scene\Gui\CInterfaceLayer.h" />
+    <ClInclude Include="Scene\Gui\CNumCtrl.h" />
+    <ClInclude Include="Scene\Gui\CNumRemain.h" />
+    <ClInclude Include="Scene\IDFlag.h" />
+    <ClInclude Include="Scene\IDScene.h" />
+    <ClInclude Include="Scene\IScene.h" />
+    <ClInclude Include="Scene\Scene.h" />
+    <ClInclude Include="Scene\Unit\CExitUnit.h" />
+    <ClInclude Include="Scene\Unit\CHelpUnit.h" />
+    <ClInclude Include="Scene\Unit\CSortUnit.h" />
+    <ClInclude Include="Scene\Unit\CYesNoUnit.h" />
+    <ClInclude Include="Scene\Unit\IDHelp.h" />
+    <ClInclude Include="Slg\Action\Action.h" />
+    <ClInclude Include="Slg\Action\CActionAkabine.h" />
+    <ClInclude Include="Slg\Action\CActionFactory.h" />
+    <ClInclude Include="SLG\Action\CActionFieldEval.h" />
+    <ClInclude Include="SLG\Action\CActionFieldParam.h" />
+    <ClInclude Include="SLG\Action\CActionNo.h" />
+    <ClInclude Include="SLG\Action\CActionNormal.h" />
+    <ClInclude Include="SLG\Action\CActionNormalEval.h" />
+    <ClInclude Include="Slg\Action\CActionNormalParam.h" />
+    <ClInclude Include="Slg\Action\CActionSimple.h" />
+    <ClInclude Include="Slg\Action\CActionWall.h" />
+    <ClInclude Include="Slg\Action\CActionWallCounter.h" />
+    <ClInclude Include="Slg\Action\IAction.h" />
+    <ClInclude Include="Slg\Action\IDAction.h" />
+    <ClInclude Include="Slg\Attack\CAttack_action.h" />
+    <ClInclude Include="Slg\Attack\CAttack_apply.h" />
+    <ClInclude Include="Slg\Attack\CAttack_calc.h" />
+    <ClInclude Include="Slg\Attack\CAttack_del.h" />
+    <ClInclude Include="Slg\Attack\CAttack_demo.h" />
+    <ClInclude Include="Slg\Attack\CAttack_range2.h" />
+    <ClInclude Include="Slg\Attack\CAttack_result.h" />
+    <ClInclude Include="Slg\Attack\CAttack_road.h" />
+    <ClInclude Include="Slg\Attack\CAttack_road2.h" />
+    <ClInclude Include="Slg\Attack\CAttack_rule2.h" />
+    <ClInclude Include="Slg\Attack\CAttack_rule_cpu.h" />
+    <ClInclude Include="Slg\Attack\CAttack_select2.h" />
+    <ClInclude Include="Slg\Attack\CAttack_weapon.h" />
+    <ClInclude Include="Slg\Attack\CAttack_weapon_support.h" />
+    <ClInclude Include="SLG\Attack\CField_attack.h" />
+    <ClInclude Include="SLG\Attack\CField_rule.h" />
+    <ClInclude Include="SLG\Attack\CField_select.h" />
+    <ClInclude Include="Slg\CodeSlg.h" />
+    <ClInclude Include="Slg\Code\CCode_chara2slg.h" />
+    <ClInclude Include="Slg\Code\CCode_cond_call.h" />
+    <ClInclude Include="Slg\Code\CCode_get_chara.h" />
+    <ClInclude Include="Slg\Code\CCode_get_ctrl_chara.h" />
+    <ClInclude Include="Slg\Code\CCode_get_phase.h" />
+    <ClInclude Include="Slg\Code\CCode_get_target.h" />
+    <ClInclude Include="Slg\Code\CCode_get_turn.h" />
+    <ClInclude Include="Slg\Code\CCode_map_pos.h" />
+    <ClInclude Include="SLG\Code\CCode_map_scroll.h" />
+    <ClInclude Include="Slg\Code\CCode_parent_state.h" />
+    <ClInclude Include="Slg\Code\CCode_set_ctrl_chara.h" />
+    <ClInclude Include="Slg\Code\CCode_set_target.h" />
+    <ClInclude Include="Slg\Code\CCode_slg2chara.h" />
+    <ClInclude Include="SLG\Code\CCode_slg2valid.h" />
+    <ClInclude Include="SLG\Code\CCode_slg_end.h" />
+    <ClInclude Include="Slg\Context\CBattleState.h" />
+    <ClInclude Include="Slg\Context\CCharaState.h" />
+    <ClInclude Include="Slg\Context\CCode_chara.h" />
+    <ClInclude Include="Slg\Context\CDataBattle.h" />
+    <ClInclude Include="Slg\Context\CDataBattleAbility.h" />
+    <ClInclude Include="Slg\Context\CDataBattleAttack.h" />
+    <ClInclude Include="Slg\Context\CDataBattleDefence.h" />
+    <ClInclude Include="SLG\Context\CDataBattleMap.h" />
+    <ClInclude Include="Slg\Context\CDataCharaSLG.h" />
+    <ClInclude Include="Slg\Context\CMapSymbolDB.h" />
+    <ClInclude Include="Slg\Context\COffsetBattle.h" />
+    <ClInclude Include="Slg\Context\COffsetMove.h" />
+    <ClInclude Include="Slg\Context\COffsetWeapon.h" />
+    <ClInclude Include="Slg\Context\CSLGContext.h" />
+    <ClInclude Include="Slg\Context\CSLGDef.h" />
+    <ClInclude Include="Slg\Context\CValidAbility.h" />
+    <ClInclude Include="Slg\Context\Db\CBattleEvent.h" />
+    <ClInclude Include="Slg\Context\Db\CCondBattle.h" />
+    <ClInclude Include="Slg\Context\Db\CCondChara.h" />
+    <ClInclude Include="Slg\Context\Db\CCondDeath.h" />
+    <ClInclude Include="Slg\Context\Db\CCondFlag.h" />
+    <ClInclude Include="Slg\Context\Db\CCondPhase.h" />
+    <ClInclude Include="Slg\Context\Db\CCondVictory.h" />
+    <ClInclude Include="Slg\Context\Db\CSlgBattleEventLoader.h" />
+    <ClInclude Include="Slg\Context\Db\CSlgBattleEventParser.h" />
+    <ClInclude Include="Slg\Context\Db\CSlgCondList.h" />
+    <ClInclude Include="Slg\Context\Db\CSlgCondLoader.h" />
+    <ClInclude Include="Slg\Context\Db\CSlgCondParser.h" />
+    <ClInclude Include="Slg\Context\Db\CSlgParser.h" />
+    <ClInclude Include="Slg\Context\Db\CSlgScriptLoader.h" />
+    <ClInclude Include="Slg\Context\Db\CSlgScriptParser.h" />
+    <ClInclude Include="Slg\Context\Db\ISlgCond.h" />
+    <ClInclude Include="Slg\Context\Db\SlgCmd.h" />
+    <ClInclude Include="Slg\Context\Db\slg_closure.h" />
+    <ClInclude Include="Slg\Context\Db\slg_symbol.h" />
+    <ClInclude Include="SLG\Context\SlgFunctor.h" />
+    <ClInclude Include="Slg\CSLGScene.h" />
+    <ClInclude Include="Slg\Demo\CDemo_map.h" />
+    <ClInclude Include="Slg\Demo\CDemo_map_base.h" />
+    <ClInclude Include="Slg\Demo\CDemo_map_battle.h" />
+    <ClInclude Include="Slg\Demo\CDemo_map_spirit.h" />
+    <ClInclude Include="Slg\Effect\CCmdSlgEffect.h" />
+    <ClInclude Include="Slg\Effect\CEffectDB.h" />
+    <ClInclude Include="Slg\Effect\CEffectInfo.h" />
+    <ClInclude Include="Slg\Effect\CEffectMovieClip.h" />
+    <ClInclude Include="Slg\Effect\Code\CCode_add_symbol.h" />
+    <ClInclude Include="Slg\Effect\Code\CCode_back.h" />
+    <ClInclude Include="Slg\Effect\Code\CCode_ctrl_map_chip.h" />
+    <ClInclude Include="Slg\Effect\Code\CCode_ctrl_symbol.h" />
+    <ClInclude Include="Slg\Effect\Code\CCode_del_symbol.h" />
+    <ClInclude Include="Slg\Effect\Code\CCode_load_symbol.h" />
+    <ClInclude Include="Slg\Effect\Code\CCode_phase_ball_ctrl.h" />
+    <ClInclude Include="Slg\Effect\Code\CCode_skip.h" />
+    <ClInclude Include="Slg\Effect\Code\CWait_symbol.h" />
+    <ClInclude Include="Slg\Effect\CSlgEffectScriptFactory.h" />
+    <ClInclude Include="Slg\Effect\CSlgEffectScriptLoader.h" />
+    <ClInclude Include="Slg\Effect\CSlgEffectScriptParser.h" />
+    <ClInclude Include="Slg\Effect\effect_symbol_closure.h" />
+    <ClInclude Include="Slg\Event\CEvent.h" />
+    <ClInclude Include="Slg\Event\CEvent_base.h" />
+    <ClInclude Include="Slg\Event\CEvent_Battle.h" />
+    <ClInclude Include="Slg\Event\CEvent_Battle2.h" />
+    <ClInclude Include="Slg\Event\CEvent_Msg.h" />
+    <ClInclude Include="SLG\Event\CEvent_Msg_back.h" />
+    <ClInclude Include="Slg\Event\CEvent_Msg_state.h" />
+    <ClInclude Include="SLG\Event\CSLGMsgLog.h" />
+    <ClInclude Include="Slg\Gui\CStatusCharaVeryEasy.h" />
+    <ClInclude Include="Slg\IDRule.h" />
+    <ClInclude Include="Slg\IDSLG.h" />
+    <ClInclude Include="Slg\Item\CItem_apply.h" />
+    <ClInclude Include="Slg\Item\CItem_menu.h" />
+    <ClInclude Include="Slg\Item\CItem_rule.h" />
+    <ClInclude Include="Slg\Map\CMap.h" />
+    <ClInclude Include="Slg\Map\CMapChip.h" />
+    <ClInclude Include="SLG\Map\CMapChipChara.h" />
+    <ClInclude Include="Slg\Map\CMapChipChara2.h" />
+    <ClInclude Include="SLG\Map\CMapChipCharaSprite.h" />
+    <ClInclude Include="Slg\Map\CMapChipCharaSprite2.h" />
+    <ClInclude Include="Slg\Map\CMapChipInfo.h" />
+    <ClInclude Include="Slg\Map\CMapChipObj.h" />
+    <ClInclude Include="Slg\Map\CMapChipState.h" />
+    <ClInclude Include="Slg\Map\CMapLoader.h" />
+    <ClInclude Include="Slg\Map\CMapParser.h" />
+    <ClInclude Include="Slg\Map\CMap_cursol.h" />
+    <ClInclude Include="SLG\Map\CMap_scroll.h" />
+    <ClInclude Include="Slg\Map\map_closure.h" />
+    <ClInclude Include="Slg\Map\map_symbol.h" />
+    <ClInclude Include="Slg\Menu\CGameOverUnit.h" />
+    <ClInclude Include="Slg\Menu\CMenu_chara2.h" />
+    <ClInclude Include="Slg\Menu\CMenu_select.h" />
+    <ClInclude Include="Slg\Menu\CMenu_select_Cancel.h" />
+    <ClInclude Include="Slg\Menu\CMenu_select_cpu.h" />
+    <ClInclude Include="Slg\Menu\CMenu_select_NO.h" />
+    <ClInclude Include="Slg\Menu\CMenu_select_OK.h" />
+    <ClInclude Include="Slg\Menu\CMenu_select_player.h" />
+    <ClInclude Include="Slg\Menu\CMenu_status.h" />
+    <ClInclude Include="Slg\Menu\CMenu_turn.h" />
+    <ClInclude Include="Slg\Move\CMove_dist.h" />
+    <ClInclude Include="Slg\Move\CMove_exec2.h" />
+    <ClInclude Include="Slg\Move\CMove_range.h" />
+    <ClInclude Include="Slg\Move\CMove_road.h" />
+    <ClInclude Include="Slg\Move\CMove_rule.h" />
+    <ClInclude Include="Slg\Move\CMove_rule_cpu.h" />
+    <ClInclude Include="Slg\Move\CMove_select.h" />
+    <ClInclude Include="Slg\Move\CMove_view.h" />
+    <ClInclude Include="Slg\Penalty\CPenalty_rule.h" />
+    <ClInclude Include="Slg\Phase\CPhaseBall.h" />
+    <ClInclude Include="Slg\Phase\CPhase_base.h" />
+    <ClInclude Include="Slg\Phase\CPhase_init.h" />
+    <ClInclude Include="SLG\Refill\CCure_rule.h" />
+    <ClInclude Include="Slg\Refill\CRefill_apply.h" />
+    <ClInclude Include="Slg\Refill\CRefill_rule.h" />
+    <ClInclude Include="Slg\Sally\CSally_add_chara.h" />
+    <ClInclude Include="Slg\Sally\CSally_add_chara_map.h" />
+    <ClInclude Include="Slg\Sally\CSally_add_chara_map2.h" />
+    <ClInclude Include="Slg\Sally\CSally_change_chara.h" />
+    <ClInclude Include="Slg\Sally\CSally_del_chara.h" />
+    <ClInclude Include="Slg\Sally\CSally_del_chara_map.h" />
+    <ClInclude Include="Slg\Sally\CSally_select.h" />
+    <ClInclude Include="Slg\Sally\CSally_setup_weapon.h" />
+    <ClInclude Include="Slg\Sally\CSally_set_pers.h" />
+    <ClInclude Include="Slg\Sally\CSally_spirit.h" />
+    <ClInclude Include="Slg\Sally\CSally_view.h" />
+    <ClInclude Include="Slg\Save_Exit\CExit_rule.h" />
+    <ClInclude Include="Slg\Save_Exit\CSave_rule.h" />
+    <ClInclude Include="Slg\SlgApi.h" />
+    <ClInclude Include="Slg\slg_fun.h" />
+    <ClInclude Include="Slg\Spirit\CSpirit_apply.h" />
+    <ClInclude Include="Slg\Spirit\CSpirit_menu.h" />
+    <ClInclude Include="Slg\Spirit\CSpirit_rule.h" />
+    <ClInclude Include="Slg\Spirit\CSpirit_select.h" />
+    <ClInclude Include="Slg\Status\CStatus_rule.h" />
+    <ClInclude Include="Slg\System\CSystem_rule.h" />
+    <ClInclude Include="Slg\various\CBattle_base.h" />
+    <ClInclude Include="Slg\various\CChara_base.h" />
+    <ClInclude Include="Slg\various\CContinue_start.h" />
+    <ClInclude Include="Slg\various\CData_ref.h" />
+    <ClInclude Include="SLG\various\CLove_rule.h" />
+    <ClInclude Include="Slg\various\CScript_base.h" />
+    <ClInclude Include="Slg\various\CWait_frame.h" />
+    <ClInclude Include="Slg\various\CWait_rule.h" />
+    <ClInclude Include="Slg\Victory\CVictory_change.h" />
+    <ClInclude Include="Slg\Victory\CVictory_check.h" />
+    <ClInclude Include="Slg\Victory\CVictory_check2.h" />
+    <ClInclude Include="Slg\Victory\CVictory_view.h" />
+    <ClInclude Include="Slg\Vm\CSlgCmdFactory.h" />
+    <ClInclude Include="Slg\Vm\CSLGFactory.h" />
+    <ClInclude Include="Slg\Vm\CSlgVM.h" />
+    <ClInclude Include="Slg\Vm\CSubroutineFactorySLG.h" />
+    <ClInclude Include="Sound\CBgm.h" />
+    <ClInclude Include="Sound\Code\CCode_bgm.h" />
+    <ClInclude Include="Sound\Code\CCode_bgm_wait.h" />
+    <ClInclude Include="Sound\Code\CCode_se.h" />
+    <ClInclude Include="Sound\Code\CCode_se_wait.h" />
+    <ClInclude Include="Sound\Code\CSoundCmdFactory.h" />
+    <ClInclude Include="Sound\Code\sound_closure.h" />
+    <ClInclude Include="Sound\Code\sound_symbol.h" />
+    <ClInclude Include="Sound\ConstSound.h" />
+    <ClInclude Include="Sound\CSeDB.h" />
+    <ClInclude Include="Sound\CSoundDB.h" />
+    <ClInclude Include="Sound\IDSound.h" />
+    <ClInclude Include="Sound\Sound.h" />
+    <ClInclude Include="Sound\SoundCmd.h" />
+    <ClInclude Include="Sound\SoundCode.h" />
+    <ClInclude Include="Spirit\ConstSpirit.h" />
+    <ClInclude Include="Spirit\CSpiritDB.h" />
+    <ClInclude Include="Spirit\IDSpirit.h" />
+    <ClInclude Include="Spirit\Spirit.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Acc.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Again.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Avoid.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Awake.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Bless.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Charge.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Cheer.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Concent.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Defence.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Direct.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Easyon.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Effort.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Encourage.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Faith.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Fireball.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Fortune.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Friend.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Guts.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Hit.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Hope.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Jump.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Miracle.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Power.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Pray.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Provo.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Snipe.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Spirit.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Spy.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Supply.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Sync.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Tough.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Trust.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Veryguts.h" />
+    <ClInclude Include="Spirit\Spirit\CSpirit_Weak.h" />
+    <ClInclude Include="Status\CStatusWeaponPanel.h" />
+    <ClInclude Include="Status\status_fun.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Task\CTaskBase.h" />
+    <ClInclude Include="Task\CTaskContext.h" />
+    <ClInclude Include="Task\CTaskCtrl.h" />
+    <ClInclude Include="Task\CTaskList.h" />
+    <ClInclude Include="Task\CTaskListCtrl.h" />
+    <ClInclude Include="Task\CTaskListCtrlChache.h" />
+    <ClInclude Include="Task\CTaskListDraw.h" />
+    <ClInclude Include="Task\ITaskBase.h" />
+    <ClInclude Include="Task\ITaskList.h" />
+    <ClInclude Include="Task\ITaskListCtrl.h" />
+    <ClInclude Include="Task\ITaskListFactory.h" />
+    <ClInclude Include="Task\Task.h" />
+    <ClInclude Include="Title\CTitleScene.h" />
+    <ClInclude Include="Title\DemoTest\CDemoTestParser.h" />
+    <ClInclude Include="Title\IDTitle.h" />
+    <ClInclude Include="Tutorial\CTutorialScene.h" />
+    <ClInclude Include="Vm\CApi.h" />
+    <ClInclude Include="Vm\Code\CCode_call.h" />
+    <ClInclude Include="Vm\Code\CCode_cursol_enable.h" />
+    <ClInclude Include="Vm\Code\CCode_cursol_pos.h" />
+    <ClInclude Include="Vm\Code\CCode_get_value.h" />
+    <ClInclude Include="Vm\Code\CCode_input_enable.h" />
+    <ClInclude Include="Vm\Code\CCode_ipush.h" />
+    <ClInclude Include="Vm\Code\CCode_nop.h" />
+    <ClInclude Include="Vm\Code\CCode_pop.h" />
+    <ClInclude Include="Vm\Code\CCode_ret.h" />
+    <ClInclude Include="Vm\Code\CCode_set_value.h" />
+    <ClInclude Include="Vm\Code\CCode_spush.h" />
+    <ClInclude Include="Vm\Code\CCode_wait.h" />
+    <ClInclude Include="Vm\Code\Code.h" />
+    <ClInclude Include="Vm\CScript.h" />
+    <ClInclude Include="Vm\CScriptExec.h" />
+    <ClInclude Include="Vm\CVM.h" />
+    <ClInclude Include="Vm\VM.h" />
+    <ClInclude Include="Weapon\CalcWeapon.h" />
+    <ClInclude Include="Weapon\CDataWeaponBattle.h" />
+    <ClInclude Include="Weapon\CDataWeaponBattleCollab.h" />
+    <ClInclude Include="Weapon\CDataWeaponBattleCond.h" />
+    <ClInclude Include="Weapon\CDataWeaponBattleCure.h" />
+    <ClInclude Include="Weapon\CDataWeaponBattleRefill.h" />
+    <ClInclude Include="Weapon\CDataWeaponBattleStatus.h" />
+    <ClInclude Include="Weapon\CDataWeaponInit.h" />
+    <ClInclude Include="Weapon\ConstWeapon.h" />
+    <ClInclude Include="Weapon\CStatusWeapon.h" />
+    <ClInclude Include="Weapon\CStatusWeaponStatus.h" />
+    <ClInclude Include="Weapon\Db\CWeaponDB.h" />
+    <ClInclude Include="Weapon\Db\CWeaponParser.h" />
+    <ClInclude Include="Weapon\Db\weapon_closure.h" />
+    <ClInclude Include="Weapon\Db\weapon_symbol.h" />
+    <ClInclude Include="Weapon\IDWeapon.h" />
+    <ClInclude Include="Weapon\Weapon.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Ability\Ability\CAbility_Against.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_AlterEgo.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Arrowbless.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Attacker.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Avalon.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Backupattack.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Backupdefence.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Battlefollow.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Battlespirit.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Breakline.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_ChaliceConect.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Colabarriar.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Counter.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Death.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Death_Ex.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Death_True.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Demon.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Division.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Division_True.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_En_recover_l.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_En_recover_m.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_En_recover_s.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Fightup.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Fly.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Fundpower.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Futou.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Futsuno.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Futureeye.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Futureeye_Second.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Guard.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Hp_recover_l.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Hp_recover_m.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Hp_recover_s.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Ikiyoyo.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Madred.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Magicbarrier_a.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Magicbarrier_b.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Magicbarrier_c.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Magician.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Magicrelease.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_MekaBarriar.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_MekaBarriarWeak.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_MudaiShield.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_OpenGet.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Origin.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Revenge.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Rithm.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Roaias.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Scaepgoat.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Specter.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Sprecover.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Spup.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Superpower.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Twelvecross.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_TwiceAttack.cpp" />
+    <ClCompile Include="Ability\Ability\CAbility_Vampire.cpp" />
+    <ClCompile Include="Ability\CFundTable.cpp" />
+    <ClCompile Include="Ability\ConstAbility.cpp" />
+    <ClCompile Include="Ability\DB\CAbilityDB.cpp" />
+    <ClCompile Include="Adv\CADVBack.cpp" />
+    <ClCompile Include="Adv\CAdvCmdFactory.cpp" />
+    <ClCompile Include="Adv\CAdvFactory.cpp" />
+    <ClCompile Include="Adv\CADVScene.cpp" />
+    <ClCompile Include="Adv\CAdvVM.cpp" />
+    <ClCompile Include="Adv\CMsgBoard.cpp" />
+    <ClCompile Include="Adv\Code\CBack_change.cpp" />
+    <ClCompile Include="Adv\Code\CChange_chara.cpp" />
+    <ClCompile Include="Adv\Code\CCode_fade.cpp" />
+    <ClCompile Include="Adv\Code\CCode_msg_state.cpp" />
+    <ClCompile Include="Adv\Code\CCode_next.cpp" />
+    <ClCompile Include="Adv\Code\CCode_train.cpp" />
+    <ClCompile Include="ADV\Code\CCode_train_all.cpp" />
+    <ClCompile Include="Adv\Code\CCode_valid.cpp" />
+    <ClCompile Include="ADV\Code\CItem_ctrl.cpp" />
+    <ClCompile Include="ADV\Code\CMsg_back.cpp" />
+    <ClCompile Include="Adv\Code\CMsg_change.cpp" />
+    <ClCompile Include="Adv\Code\CScenario_select.cpp" />
+    <ClCompile Include="Adv\Code\CWait_fade.cpp" />
+    <ClCompile Include="Adv\Code\CWait_input.cpp" />
+    <ClCompile Include="Adv\ConstADV.cpp" />
+    <ClCompile Include="Adv\Db\CBackDB.cpp" />
+    <ClCompile Include="Bmw\06_c\CEvent_trap.cpp" />
+    <ClCompile Include="Bmw\06_c\CFactorySLG_C_06.cpp" />
+    <ClCompile Include="Bmw\11_c\CCaosCreate.cpp" />
+    <ClCompile Include="Bmw\11_c\CFactorySLG_C_11.cpp" />
+    <ClCompile Include="Bmw\20_t\CArcher_snipe.cpp" />
+    <ClCompile Include="Bmw\20_t\CFactorySLG_T_20.cpp" />
+    <ClCompile Include="CApp.cpp" />
+    <ClCompile Include="Chara\CDataCharaBattle.cpp" />
+    <ClCompile Include="Chara\CDataCharaGrowthAbility.cpp" />
+    <ClCompile Include="Chara\CDataCharaGrowthStatus.cpp" />
+    <ClCompile Include="Chara\CDataCharaInit.cpp" />
+    <ClCompile Include="Chara\CDataCharaInter.cpp" />
+    <ClCompile Include="Chara\CDataCharaTrain.cpp" />
+    <ClCompile Include="Chara\ConstChara.cpp" />
+    <ClCompile Include="Chara\CStatusAbility.cpp" />
+    <ClCompile Include="Chara\CStatusBattle.cpp" />
+    <ClCompile Include="Chara\CStatusFund.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="Chara\CValidSkill.cpp" />
+    <ClCompile Include="Chara\Db\CCharaDB.cpp" />
+    <ClCompile Include="Chara\Db\CDataCharaData.cpp" />
+    <ClCompile Include="Config\ConstConfig.cpp" />
+    <ClCompile Include="Config\Db\CConfigDB.cpp" />
+    <ClCompile Include="Data\CDataContext.cpp" />
+    <ClCompile Include="Data\CDataScene.cpp" />
+    <ClCompile Include="Demo\Back\CDemoBack.cpp" />
+    <ClCompile Include="Demo\Back\CDemoBackLine.cpp" />
+    <ClCompile Include="Demo\Back\CDemoBackLoader.cpp" />
+    <ClCompile Include="Demo\Back\IDemoBackLine.cpp" />
+    <ClCompile Include="Demo\CDemoMovieClip.cpp" />
+    <ClCompile Include="Demo\CDemoScene.cpp" />
+    <ClCompile Include="Demo\CDemoSymbolDB.cpp" />
+    <ClCompile Include="Demo\CLayerChara.cpp" />
+    <ClCompile Include="Demo\Code\CCode_back_vel.cpp" />
+    <ClCompile Include="Demo\Code\CCode_back_visible.cpp" />
+    <ClCompile Include="Demo\Code\CCode_curtain.cpp" />
+    <ClCompile Include="Demo\Code\CCode_damage.cpp" />
+    <ClCompile Include="Demo\Code\CCode_damage_state.cpp" />
+    <ClCompile Include="Demo\Code\CCode_gage.cpp" />
+    <ClCompile Include="Demo\Code\CCode_msg_demo.cpp" />
+    <ClCompile Include="Demo\Def\CDemoDef.cpp" />
+    <ClCompile Include="Demo\Def\CDemoMsgCond.cpp" />
+    <ClCompile Include="Demo\Gui\CDemoDamage.cpp" />
+    <ClCompile Include="Demo\Gui\CDemoEasyStatus.cpp" />
+    <ClCompile Include="Demo\Gui\CDemoMsgBoard.cpp" />
+    <ClCompile Include="Demo\Msg\CDemoMsgDB.cpp" />
+    <ClCompile Include="Demo\Msg\CDemoMsgList.cpp" />
+    <ClCompile Include="Dict\CDictCharaContext.cpp" />
+    <ClCompile Include="Dict\CDictCharaFace.cpp" />
+    <ClCompile Include="Dict\CDictCharaFactory.cpp" />
+    <ClCompile Include="Dict\CDictCharaScene.cpp" />
+    <ClCompile Include="Dict\CDictCharaSelect.cpp" />
+    <ClCompile Include="Dict\CDictCharaSymbol.cpp" />
+    <ClCompile Include="Dict\CDictCharaView.cpp" />
+    <ClCompile Include="Dict\CDictSoundContext.cpp" />
+    <ClCompile Include="Dict\CDictSoundScene.cpp" />
+    <ClCompile Include="Draw\CFader.cpp" />
+    <ClCompile Include="Draw\Db\CPlaneLoader2.cpp" />
+    <ClCompile Include="Draw\Db\CSpriteDB.cpp" />
+    <ClCompile Include="Ed\CEdScene.cpp" />
+    <ClCompile Include="End\CEndScene.cpp" />
+    <ClCompile Include="Face\CFaceMap.cpp" />
+    <ClCompile Include="Face\ConstFace.cpp" />
+    <ClCompile Include="Face\Db\CFaceDB.cpp" />
+    <ClCompile Include="Game\CGameScene.cpp" />
+    <ClCompile Include="Gui\CButton.cpp" />
+    <ClCompile Include="Gui\CButtonGraphic.cpp" />
+    <ClCompile Include="Gui\CButtonKeep.cpp" />
+    <ClCompile Include="Gui\CButtonKeepSymbol.cpp" />
+    <ClCompile Include="Gui\CButtonSymbol.cpp" />
+    <ClCompile Include="Gui\CGraphic.cpp" />
+    <ClCompile Include="Gui\CGraphicAccuracy.cpp" />
+    <ClCompile Include="GUI\CGraphicAffine.cpp" />
+    <ClCompile Include="GUI\CGraphicMorph.cpp" />
+    <ClCompile Include="Gui\CGraphicPopUp.cpp" />
+    <ClCompile Include="Gui\CGraphicRotate.cpp" />
+    <ClCompile Include="Gui\CGraphicRotate2.cpp" />
+    <ClCompile Include="Gui\CGraphicRotate3.cpp" />
+    <ClCompile Include="Gui\CGraphicSize.cpp" />
+    <ClCompile Include="Gui\CNum.cpp" />
+    <ClCompile Include="Gui\CPanel.cpp" />
+    <ClCompile Include="Gui\CPanelCtrl.cpp" />
+    <ClCompile Include="GUI\CPopUpBase.cpp" />
+    <ClCompile Include="GUI\CPopUpCtrl.cpp" />
+    <ClCompile Include="Gui\CText.cpp" />
+    <ClCompile Include="Gui\CTextPopUp.cpp" />
+    <ClCompile Include="GUI\CTextSize.cpp" />
+    <ClCompile Include="Gui\Db\CDataGuiDefPanel.cpp" />
+    <ClCompile Include="Gui\Db\CGuiDefDB.cpp" />
+    <ClCompile Include="Gui\Db\CGuiDefDB_widget.cpp" />
+    <ClCompile Include="Gui\Event\CEventButton.cpp" />
+    <ClCompile Include="Gui\IButton.cpp" />
+    <ClCompile Include="Gui\IPanel.cpp" />
+    <ClCompile Include="Handover\CHandoverScene.cpp" />
+    <ClCompile Include="Hero\CHeroScene.cpp" />
+    <ClCompile Include="InitLoad\CInitLoadScene.cpp" />
+    <ClCompile Include="Input\CTaskInput.cpp" />
+    <ClCompile Include="Inter\CChara.cpp" />
+    <ClCompile Include="Inter\CInterChara.cpp" />
+    <ClCompile Include="Inter\CInterContext.cpp" />
+    <ClCompile Include="Inter\CInterFactory.cpp" />
+    <ClCompile Include="Inter\CInterScene.cpp" />
+    <ClCompile Include="Inter\CInterTaskListCtrl.cpp" />
+    <ClCompile Include="Inter\CItemEqup.cpp" />
+    <ClCompile Include="Inter\CItemExchange.cpp" />
+    <ClCompile Include="Inter\CSelect.cpp" />
+    <ClCompile Include="Inter\CTrainBattle.cpp" />
+    <ClCompile Include="Inter\CTrainFnd.cpp" />
+    <ClCompile Include="Inter\CTrainSkill.cpp" />
+    <ClCompile Include="Inter\CTrainWeapon.cpp" />
+    <ClCompile Include="Inter\CWeaponFactory.cpp" />
+    <ClCompile Include="Item\CItemDB.cpp" />
+    <ClCompile Include="Item\ConstItem.cpp" />
+    <ClCompile Include="Item\Item\CItem_Agonist.cpp" />
+    <ClCompile Include="Item\Item\CItem_Archer.cpp" />
+    <ClCompile Include="Item\Item\CItem_Avenger.cpp" />
+    <ClCompile Include="Item\Item\CItem_Berserker.cpp" />
+    <ClCompile Include="Item\Item\CItem_Boot.cpp" />
+    <ClCompile Include="Item\Item\CItem_Caster.cpp" />
+    <ClCompile Include="Item\Item\CItem_Curry.cpp" />
+    <ClCompile Include="Item\Item\CItem_Earring.cpp" />
+    <ClCompile Include="Item\Item\CItem_Gem.cpp" />
+    <ClCompile Include="Item\Item\CItem_Giru.cpp" />
+    <ClCompile Include="Item\Item\CItem_Houi.cpp" />
+    <ClCompile Include="Item\Item\CItem_Kyudo.cpp" />
+    <ClCompile Include="Item\Item\CItem_Lancer.cpp" />
+    <ClCompile Include="Item\Item\CItem_Mabo.cpp" />
+    <ClCompile Include="Item\Item\CItem_Magazine.cpp" />
+    <ClCompile Include="Item\Item\CItem_Maid.cpp" />
+    <ClCompile Include="Item\Item\CItem_Medi.cpp" />
+    <ClCompile Include="Item\Item\CItem_Megane.cpp" />
+    <ClCompile Include="Item\Item\CItem_Neko.cpp" />
+    <ClCompile Include="Item\Item\CItem_Otsu.cpp" />
+    <ClCompile Include="Item\Item\CItem_Ribbon.cpp" />
+    <ClCompile Include="Item\Item\CItem_Rider.cpp" />
+    <ClCompile Include="Item\Item\CItem_Rod.cpp" />
+    <ClCompile Include="Item\Item\CItem_Saber.cpp" />
+    <ClCompile Include="Item\Item\CItem_Shiro.cpp" />
+    <ClCompile Include="Item\Item\CItem_True_assassin.cpp" />
+    <ClCompile Include="Item\Item\CItem_Wotsu.cpp" />
+    <ClCompile Include="Logo\CLogoScene.cpp" />
+    <ClCompile Include="Misc\CLottery.cpp" />
+    <ClCompile Include="Misc\CRandLottery.cpp" />
+    <ClCompile Include="Movie\CLayer.cpp" />
+    <ClCompile Include="Movie\CMotion.cpp" />
+    <ClCompile Include="Movie\CMotionCircle.cpp" />
+    <ClCompile Include="Movie\CMovieClip.cpp" />
+    <ClCompile Include="Movie\CMovieScene.cpp" />
+    <ClCompile Include="Movie\Code\CCode_movie_end.cpp" />
+    <ClCompile Include="Movie\Code\CCode_movie_se_wait.cpp" />
+    <ClCompile Include="Movie\Code\CCode_movie_stop.cpp" />
+    <ClCompile Include="Movie\Code\CCode_stop.cpp" />
+    <ClCompile Include="Movie\Code\CSymbolCmdFactory.cpp" />
+    <ClCompile Include="Movie\CScriptExecSymbol.cpp" />
+    <ClCompile Include="Movie\CTween.cpp" />
+    <ClCompile Include="Movie\Db\CDataSymbolMovieClip.cpp" />
+    <ClCompile Include="Movie\Db\CSymbolDB.cpp" />
+    <ClCompile Include="Parser\parse_symbol.cpp" />
+    <ClCompile Include="Rule\CRuleButton.cpp" />
+    <ClCompile Include="Rule\CRuleCancel.cpp" />
+    <ClCompile Include="Rule\CRuleList.cpp" />
+    <ClCompile Include="Rule\CRuleListDraw.cpp" />
+    <ClCompile Include="Rule\CRuleMenuButton.cpp" />
+    <ClCompile Include="Rule\CRuleOK.cpp" />
+    <ClCompile Include="Save\CExecData.cpp" />
+    <ClCompile Include="Save\CGlobalData.cpp" />
+    <ClCompile Include="Scenario\CDataScenario.cpp" />
+    <ClCompile Include="Scenario\CScenarioDB.cpp" />
+    <ClCompile Include="Scene\Code\CCode_ctrl_item.cpp" />
+    <ClCompile Include="Scene\Code\CCode_help.cpp" />
+    <ClCompile Include="Scene\ConstScene.cpp" />
+    <ClCompile Include="Scene\CSceneFactory.cpp" />
+    <ClCompile Include="Scene\Draw\CFoward.cpp" />
+    <ClCompile Include="Scene\Event\IListenerCircleMenu.cpp" />
+    <ClCompile Include="Scene\Gui\CCircleMenu.cpp" />
+    <ClCompile Include="Scene\Gui\CCircleMenuButton.cpp" />
+    <ClCompile Include="Scene\Gui\CGage.cpp" />
+    <ClCompile Include="Scene\Gui\CGraphicFace.cpp" />
+    <ClCompile Include="Scene\Gui\CGraphicName.cpp" />
+    <ClCompile Include="Scene\Gui\CInterfaceLayer.cpp" />
+    <ClCompile Include="Scene\Gui\CNumCtrl.cpp" />
+    <ClCompile Include="Scene\Gui\CNumRemain.cpp" />
+    <ClCompile Include="Scene\Unit\CExitUnit.cpp" />
+    <ClCompile Include="Scene\Unit\CHelpUnit.cpp" />
+    <ClCompile Include="Scene\Unit\CSortUnit.cpp" />
+    <ClCompile Include="Scene\Unit\CYesNoUnit.cpp" />
+    <ClCompile Include="Slg\Action\CActionAkabine.cpp" />
+    <ClCompile Include="Slg\Action\CActionFactory.cpp" />
+    <ClCompile Include="SLG\Action\CActionFieldEval.cpp" />
+    <ClCompile Include="SLG\Action\CActionFieldParam.cpp" />
+    <ClCompile Include="SLG\Action\CActionNo.cpp" />
+    <ClCompile Include="SLG\Action\CActionNormal.cpp" />
+    <ClCompile Include="SLG\Action\CActionNormalEval.cpp" />
+    <ClCompile Include="Slg\Action\CActionNormalParam.cpp" />
+    <ClCompile Include="Slg\Action\CActionSimple.cpp" />
+    <ClCompile Include="Slg\Action\CActionWall.cpp" />
+    <ClCompile Include="Slg\Action\CActionWallCounter.cpp" />
+    <ClCompile Include="Slg\Attack\CAttack_action.cpp" />
+    <ClCompile Include="Slg\Attack\CAttack_action_battle.cpp" />
+    <ClCompile Include="Slg\Attack\CAttack_action_battle_calc.cpp" />
+    <ClCompile Include="Slg\Attack\CAttack_action_calc.cpp" />
+    <ClCompile Include="Slg\Attack\CAttack_action_init.cpp" />
+    <ClCompile Include="Slg\Attack\CAttack_apply.cpp" />
+    <ClCompile Include="Slg\Attack\CAttack_calc.cpp" />
+    <ClCompile Include="Slg\Attack\CAttack_del.cpp" />
+    <ClCompile Include="Slg\Attack\CAttack_demo.cpp" />
+    <ClCompile Include="Slg\Attack\CAttack_range2.cpp" />
+    <ClCompile Include="SLG\Attack\CAttack_range2_field.cpp" />
+    <ClCompile Include="Slg\Attack\CAttack_result.cpp" />
+    <ClCompile Include="Slg\Attack\CAttack_road.cpp" />
+    <ClCompile Include="Slg\Attack\CAttack_road2.cpp" />
+    <ClCompile Include="Slg\Attack\CAttack_rule2.cpp" />
+    <ClCompile Include="Slg\Attack\CAttack_rule_cpu.cpp" />
+    <ClCompile Include="Slg\Attack\CAttack_select2.cpp" />
+    <ClCompile Include="Slg\Attack\CAttack_weapon.cpp" />
+    <ClCompile Include="Slg\Attack\CAttack_weapon_support.cpp" />
+    <ClCompile Include="SLG\Attack\CField_attack.cpp" />
+    <ClCompile Include="SLG\Attack\CField_rule.cpp" />
+    <ClCompile Include="SLG\Attack\CField_select.cpp" />
+    <ClCompile Include="Slg\Code\CCode_chara2slg.cpp" />
+    <ClCompile Include="Slg\Code\CCode_cond_call.cpp" />
+    <ClCompile Include="Slg\Code\CCode_get_chara.cpp" />
+    <ClCompile Include="Slg\Code\CCode_get_ctrl_chara.cpp" />
+    <ClCompile Include="Slg\Code\CCode_get_phase.cpp" />
+    <ClCompile Include="Slg\Code\CCode_get_target.cpp" />
+    <ClCompile Include="Slg\Code\CCode_get_turn.cpp" />
+    <ClCompile Include="Slg\Code\CCode_map_pos.cpp" />
+    <ClCompile Include="SLG\Code\CCode_map_scroll.cpp" />
+    <ClCompile Include="Slg\Code\CCode_parent_state.cpp" />
+    <ClCompile Include="Slg\Code\CCode_set_ctrl_chara.cpp" />
+    <ClCompile Include="Slg\Code\CCode_set_target.cpp" />
+    <ClCompile Include="Slg\Code\CCode_slg2chara.cpp" />
+    <ClCompile Include="SLG\Code\CCode_slg2valid.cpp" />
+    <ClCompile Include="SLG\Code\CCode_slg_end.cpp" />
+    <ClCompile Include="Slg\Context\CCharaState.cpp" />
+    <ClCompile Include="Slg\Context\CCode_chara.cpp" />
+    <ClCompile Include="Slg\Context\CDataBattleAbility.cpp" />
+    <ClCompile Include="Slg\Context\CDataCharaSLG.cpp" />
+    <ClCompile Include="Slg\Context\CSLGContext.cpp" />
+    <ClCompile Include="Slg\Context\CSLGContext_Serialize.cpp" />
+    <ClCompile Include="Slg\Context\CSLGDef.cpp" />
+    <ClCompile Include="Slg\Context\Db\CCondBattle.cpp" />
+    <ClCompile Include="Slg\Context\Db\CCondChara.cpp" />
+    <ClCompile Include="Slg\Context\Db\CCondDeath.cpp" />
+    <ClCompile Include="Slg\Context\Db\CCondFlag.cpp" />
+    <ClCompile Include="Slg\Context\Db\CCondPhase.cpp" />
+    <ClCompile Include="Slg\Context\Db\CCondVictory.cpp" />
+    <ClCompile Include="Slg\Context\Db\CSlgBattleEventLoader.cpp" />
+    <ClCompile Include="Slg\Context\Db\CSlgCondList.cpp" />
+    <ClCompile Include="Slg\Context\Db\CSlgCondLoader.cpp" />
+    <ClCompile Include="Slg\Context\Db\CSlgScriptLoader.cpp" />
+    <ClCompile Include="Slg\CSLGScene.cpp" />
+    <ClCompile Include="Slg\CSLGScene_Continue.cpp" />
+    <ClCompile Include="Slg\Demo\CDemo_map.cpp" />
+    <ClCompile Include="Slg\Demo\CDemo_map_base.cpp" />
+    <ClCompile Include="Slg\Demo\CDemo_map_battle.cpp" />
+    <ClCompile Include="Slg\Demo\CDemo_map_spirit.cpp" />
+    <ClCompile Include="Slg\Effect\CEffectDB.cpp" />
+    <ClCompile Include="Slg\Effect\CEffectMovieClip.cpp" />
+    <ClCompile Include="Slg\Effect\Code\CCode_add_symbol.cpp" />
+    <ClCompile Include="Slg\Effect\Code\CCode_back.cpp" />
+    <ClCompile Include="Slg\Effect\Code\CCode_ctrl_map_chip.cpp" />
+    <ClCompile Include="Slg\Effect\Code\CCode_ctrl_symbol.cpp" />
+    <ClCompile Include="Slg\Effect\Code\CCode_del_symbol.cpp" />
+    <ClCompile Include="Slg\Effect\Code\CCode_load_symbol.cpp" />
+    <ClCompile Include="Slg\Effect\Code\CCode_phase_ball_ctrl.cpp" />
+    <ClCompile Include="Slg\Effect\Code\CCode_skip.cpp" />
+    <ClCompile Include="Slg\Effect\Code\CWait_symbol.cpp" />
+    <ClCompile Include="Slg\Effect\CSlgEffectScriptFactory.cpp" />
+    <ClCompile Include="Slg\Effect\CSlgEffectScriptLoader.cpp" />
+    <ClCompile Include="Slg\Event\CEvent.cpp" />
+    <ClCompile Include="Slg\Event\CEvent_base.cpp" />
+    <ClCompile Include="Slg\Event\CEvent_Battle.cpp" />
+    <ClCompile Include="Slg\Event\CEvent_Battle2.cpp" />
+    <ClCompile Include="Slg\Event\CEvent_Msg.cpp" />
+    <ClCompile Include="SLG\Event\CEvent_Msg_back.cpp" />
+    <ClCompile Include="Slg\Event\CEvent_Msg_state.cpp" />
+    <ClCompile Include="Slg\Gui\CStatusCharaVeryEasy.cpp" />
+    <ClCompile Include="Slg\Item\CItem_apply.cpp" />
+    <ClCompile Include="Slg\Item\CItem_menu.cpp" />
+    <ClCompile Include="Slg\Item\CItem_rule.cpp" />
+    <ClCompile Include="Slg\Map\CMap.cpp" />
+    <ClCompile Include="Slg\Map\CMapChip.cpp" />
+    <ClCompile Include="SLG\Map\CMapChipChara.cpp" />
+    <ClCompile Include="Slg\Map\CMapChipChara2.cpp" />
+    <ClCompile Include="SLG\Map\CMapChipCharaSprite.cpp" />
+    <ClCompile Include="Slg\Map\CMapChipCharaSprite2.cpp" />
+    <ClCompile Include="Slg\Map\CMapChipState.cpp" />
+    <ClCompile Include="Slg\Map\CMapLoader.cpp" />
+    <ClCompile Include="Slg\Map\CMap_cursol.cpp" />
+    <ClCompile Include="SLG\Map\CMap_scroll.cpp" />
+    <ClCompile Include="Slg\Menu\CGameOverUnit.cpp" />
+    <ClCompile Include="Slg\Menu\CMenu_chara2.cpp" />
+    <ClCompile Include="Slg\Menu\CMenu_select.cpp" />
+    <ClCompile Include="Slg\Menu\CMenu_select_Cancel.cpp" />
+    <ClCompile Include="Slg\Menu\CMenu_select_cpu.cpp" />
+    <ClCompile Include="Slg\Menu\CMenu_select_NO.cpp" />
+    <ClCompile Include="Slg\Menu\CMenu_select_OK.cpp" />
+    <ClCompile Include="Slg\Menu\CMenu_select_player.cpp" />
+    <ClCompile Include="Slg\Menu\CMenu_status.cpp" />
+    <ClCompile Include="Slg\Menu\CMenu_turn.cpp" />
+    <ClCompile Include="Slg\Move\CMove_dist.cpp" />
+    <ClCompile Include="Slg\Move\CMove_exec2.cpp" />
+    <ClCompile Include="Slg\Move\CMove_range.cpp" />
+    <ClCompile Include="Slg\Move\CMove_road.cpp" />
+    <ClCompile Include="Slg\Move\CMove_rule.cpp" />
+    <ClCompile Include="Slg\Move\CMove_rule_cpu.cpp" />
+    <ClCompile Include="Slg\Move\CMove_select.cpp" />
+    <ClCompile Include="Slg\Move\CMove_view.cpp" />
+    <ClCompile Include="Slg\Penalty\CPenalty_rule.cpp" />
+    <ClCompile Include="Slg\Phase\CPhaseBall.cpp" />
+    <ClCompile Include="Slg\Phase\CPhase_base.cpp" />
+    <ClCompile Include="Slg\Phase\CPhase_init.cpp" />
+    <ClCompile Include="SLG\Refill\CCure_rule.cpp" />
+    <ClCompile Include="Slg\Refill\CRefill_apply.cpp" />
+    <ClCompile Include="Slg\Refill\CRefill_rule.cpp" />
+    <ClCompile Include="Slg\Sally\CSally_add_chara.cpp" />
+    <ClCompile Include="Slg\Sally\CSally_add_chara_map.cpp" />
+    <ClCompile Include="Slg\Sally\CSally_add_chara_map2.cpp" />
+    <ClCompile Include="Slg\Sally\CSally_change_chara.cpp" />
+    <ClCompile Include="Slg\Sally\CSally_del_chara.cpp" />
+    <ClCompile Include="Slg\Sally\CSally_del_chara_map.cpp" />
+    <ClCompile Include="Slg\Sally\CSally_select.cpp" />
+    <ClCompile Include="Slg\Sally\CSally_setup_weapon.cpp" />
+    <ClCompile Include="Slg\Sally\CSally_set_pers.cpp" />
+    <ClCompile Include="Slg\Sally\CSally_spirit.cpp" />
+    <ClCompile Include="Slg\Sally\CSally_view.cpp" />
+    <ClCompile Include="Slg\Save_Exit\CExit_rule.cpp" />
+    <ClCompile Include="Slg\Save_Exit\CSave_rule.cpp" />
+    <ClCompile Include="Slg\slg_fun.cpp" />
+    <ClCompile Include="Slg\Spirit\CSpirit_apply.cpp" />
+    <ClCompile Include="Slg\Spirit\CSpirit_menu.cpp" />
+    <ClCompile Include="Slg\Spirit\CSpirit_rule.cpp" />
+    <ClCompile Include="Slg\Spirit\CSpirit_select.cpp" />
+    <ClCompile Include="Slg\Status\CStatus_rule.cpp" />
+    <ClCompile Include="Slg\System\CSystem_rule.cpp" />
+    <ClCompile Include="Slg\various\CBattle_base.cpp" />
+    <ClCompile Include="Slg\various\CChara_base.cpp" />
+    <ClCompile Include="Slg\various\CContinue_start.cpp" />
+    <ClCompile Include="Slg\various\CData_ref.cpp" />
+    <ClCompile Include="SLG\various\CLove_rule.cpp" />
+    <ClCompile Include="Slg\various\CScript_base.cpp" />
+    <ClCompile Include="Slg\various\CWait_frame.cpp" />
+    <ClCompile Include="Slg\various\CWait_rule.cpp" />
+    <ClCompile Include="Slg\Victory\CVictory_change.cpp" />
+    <ClCompile Include="Slg\Victory\CVictory_check.cpp" />
+    <ClCompile Include="Slg\Victory\CVictory_check2.cpp" />
+    <ClCompile Include="Slg\Victory\CVictory_view.cpp" />
+    <ClCompile Include="Slg\Vm\CSlgCmdFactory.cpp" />
+    <ClCompile Include="Slg\Vm\CSLGFactory.cpp" />
+    <ClCompile Include="Slg\Vm\CSlgVM.cpp" />
+    <ClCompile Include="Slg\Vm\CSubroutineFactorySLG.cpp" />
+    <ClCompile Include="Sound\CBgm.cpp" />
+    <ClCompile Include="Sound\Code\CCode_bgm.cpp" />
+    <ClCompile Include="Sound\Code\CCode_bgm_wait.cpp" />
+    <ClCompile Include="Sound\Code\CCode_se.cpp" />
+    <ClCompile Include="Sound\Code\CCode_se_wait.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="Sound\Code\CSoundCmdFactory.cpp" />
+    <ClCompile Include="Sound\ConstSound.cpp" />
+    <ClCompile Include="Sound\CSeDB.cpp" />
+    <ClCompile Include="Spirit\ConstSpirit.cpp" />
+    <ClCompile Include="Spirit\CSpiritDB.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Acc.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Again.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Avoid.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Awake.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Bless.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Charge.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Cheer.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Concent.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Defence.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Direct.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Easyon.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Effort.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Encourage.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Faith.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Fireball.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Fortune.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Friend.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Guts.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Hit.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Hope.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Jump.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Miracle.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Power.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Pray.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Provo.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Snipe.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Spirit.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Spy.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Supply.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Sync.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Tough.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Trust.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Veryguts.cpp" />
+    <ClCompile Include="Spirit\Spirit\CSpirit_Weak.cpp" />
+    <ClCompile Include="Status\CStatusWeaponPanel.cpp" />
+    <ClCompile Include="Status\status_fun_base.cpp" />
+    <ClCompile Include="Status\status_fun_inter.cpp" />
+    <ClCompile Include="Status\status_fun_slg.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Develop|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Task\CTaskList.cpp" />
+    <ClCompile Include="Task\CTaskListCtrl.cpp" />
+    <ClCompile Include="Task\CTaskListCtrlChache.cpp" />
+    <ClCompile Include="Task\ITaskBase.cpp" />
+    <ClCompile Include="Task\ITaskList.cpp" />
+    <ClCompile Include="Title\CTitleScene.cpp" />
+    <ClCompile Include="Title\DemoTest\CTitleScene_Demo.cpp" />
+    <ClCompile Include="Tutorial\CTutorialScene.cpp" />
+    <ClCompile Include="Vm\Code\CCode_call.cpp" />
+    <ClCompile Include="Vm\Code\CCode_cursol_enable.cpp" />
+    <ClCompile Include="Vm\Code\CCode_cursol_pos.cpp" />
+    <ClCompile Include="Vm\Code\CCode_get_value.cpp" />
+    <ClCompile Include="Vm\Code\CCode_input_enable.cpp" />
+    <ClCompile Include="Vm\Code\CCode_ipush.cpp" />
+    <ClCompile Include="Vm\Code\CCode_nop.cpp" />
+    <ClCompile Include="Vm\Code\CCode_pop.cpp" />
+    <ClCompile Include="Vm\Code\CCode_ret.cpp" />
+    <ClCompile Include="Vm\Code\CCode_set_value.cpp" />
+    <ClCompile Include="Vm\Code\CCode_wait.cpp" />
+    <ClCompile Include="Vm\CScript.cpp" />
+    <ClCompile Include="Vm\CScriptExec.cpp" />
+    <ClCompile Include="Weapon\CalcWeapon.cpp" />
+    <ClCompile Include="Weapon\CDataWeaponBattle.cpp" />
+    <ClCompile Include="Weapon\CDataWeaponBattleCollab.cpp" />
+    <ClCompile Include="Weapon\CDataWeaponBattleCond.cpp" />
+    <ClCompile Include="Weapon\CDataWeaponBattleCure.cpp" />
+    <ClCompile Include="Weapon\CDataWeaponBattleRefill.cpp" />
+    <ClCompile Include="Weapon\CDataWeaponBattleStatus.cpp" />
+    <ClCompile Include="Weapon\ConstWeapon.cpp" />
+    <ClCompile Include="Weapon\Db\CWeaponDB.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="type01.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="開発記録.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

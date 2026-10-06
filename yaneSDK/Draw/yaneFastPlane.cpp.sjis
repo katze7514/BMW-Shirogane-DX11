@@ -1,0 +1,44 @@
+
+#include "stdafx.h"
+
+#define USE_FastDraw
+
+#ifdef USE_FastDraw
+
+#include "yaneFastPlane.h"
+#include "yaneFastDraw.h"
+#ifndef USE_D3D11
+#include "yaneDirectDraw.h"
+#endif
+#ifdef USE_D3D11
+#include "yaneD3D11Device.h"
+#endif
+#include "yaneDIBitmap.h"
+#include "yaneGraphicLoader.h"
+#include "../Auxiliary/yaneFile.h"
+#include "yaneGTL.h"
+
+namespace yaneuraoGameSDK3rd {
+namespace Draw {
+
+//////////////////////////////////////////////////////
+//	static members..
+
+ThreadLocal<CFastDraw*> CFastPlane::m_pDefaultFastDraw;
+
+//////////////////////////////////////////////////////
+
+CFastPlane::CFastPlane(CFastDraw* pFastDraw)
+{
+	m_pFastDraw = NULL;
+	SetFastDraw(pFastDraw);
+
+	m_nSizeX	=	0;
+	m_nSizeY	=	0;
+	m_lpSurface	=	NULL;
+	m_lpPalette	=	NULL;
+
+	ResetColorKey();
+	m_hDC		=	NULL;
+
+	//	

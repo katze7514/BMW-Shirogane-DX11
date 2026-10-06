@@ -1,0 +1,9 @@
+/*
+
+	yaneSDK configuration
+
+*/
+#ifndef __yaneConfig_h__
+#define __yaneConfig_h__
+
+//	

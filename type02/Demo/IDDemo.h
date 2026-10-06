@@ -1,0 +1,40 @@
+/*
+	katze 05/05/11
+	ÉfÉÇÇ≈égÇÌÇÍÇÈID
+*/
+#pragma once
+
+namespace BMW{
+namespace Demo{
+
+namespace Flag{
+enum eFlag{
+	ATTACK_HP,
+	ATTACK_EN,
+	ATTACK_WEAPON_EN,
+	ATTACK_SKILL_EN,
+	ATTACK_SKILL_DEF_EN,
+	COUNTER_HP,
+	COUNTER_EN,
+	COUNTER_WEAPON_EN,
+	COUNTER_SKILL_EN,
+	COUNTER_SKILL_DEF_EN,
+	ATTACK_BACK_HP,
+	ATTACK_BACK_EN,
+	ATTACK_BACK_WEAPON_EN,
+	ATTACK_BACK_SKILL_EN,
+	ATTACK_BACK_SKILL_DEF_EN,
+	COUNTER_BACK_HP,
+	COUNTER_BACK_EN,
+	COUNTER_BACK_WEAPON_EN,
+	COUNTER_BACK_SKILL_EN,
+	COUNTER_BACK_SKILL_DEF_EN,
+	BACK_DEF,
+
+	// ç≈å„é~Ç‹ÇÈÇ©Ç«Ç§Ç©
+	FIELD,
+};
+} // namespace Flag end
+
+} // namespace Demo end
+} // namespace BMW end
